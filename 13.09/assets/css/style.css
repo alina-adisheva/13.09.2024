@@ -1,0 +1,368 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Tinos";
+  src: url(../fonts/Tinos-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tinos";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  color: #bc9060;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+@media (max-width: 1025px) {
+  .container {
+    max-width: unset;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.btn {
+  background-color: #FF7400;
+  color: #fff;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 18px;
+}
+
+.main {
+  background: url(../img/fon1.png) no-repeat center center/cover;
+  height: 100vh;
+}
+@media (max-width: 863px) {
+  .main {
+    background: url(../img/fon1.png) no-repeat;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    height: unset;
+    padding-bottom: 305px;
+  }
+}
+.main__block {
+  max-width: 485px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 836px) {
+  .main__block {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .main__block {
+    margin-top: 250px;
+  }
+}
+.main__subtitle {
+  font-family: Tinos;
+  font-weight: 400;
+  color: #D67E34;
+  font-size: 50px;
+}
+@media (max-width: 863px) {
+  .main__subtitle {
+    font-size: 30px;
+  }
+}
+.main__title {
+  font-family: Tinos;
+  font-weight: 400;
+  color: #D67E34;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+@media (max-width: 863px) {
+  .main__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .main__title {
+    font-size: 40px;
+  }
+}
+.main__text {
+  font-family: OpenSans;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.main__text::before, .main__text::after {
+  content: "";
+  display: block;
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+@media (max-width: 500px) {
+  .main__text::before, .main__text::after {
+    display: none;
+  }
+}
+.main .header {
+  padding: 50px 0;
+}
+.main .header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.main .header__logo {
+  width: 100px;
+}
+.main .header__logo img {
+  width: 100%;
+}
+@media (max-width: 863px) {
+  .main .header__logo {
+    width: 75px;
+  }
+}
+@media (max-width: 749px) {
+  .main .header__logo {
+    width: 55px;
+  }
+}
+@media (max-width: 500px) {
+  .main .header__logo {
+    width: 45px;
+  }
+}
+.main .header__burger {
+  display: none;
+}
+@media (max-width: 749px) {
+  .main .header__burger {
+    display: block;
+  }
+}
+.main .header__block {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 749px) {
+  .main .header__block {
+    display: none;
+  }
+}
+.main .header__menu {
+  display: flex;
+  gap: 23px;
+  margin-right: 36px;
+}
+@media (max-width: 863px) {
+  .main .header__menu {
+    margin-right: 25px;
+  }
+}
+.main .header__link {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.main .header__link:hover {
+  color: #656363;
+}
+@media (max-width: 863px) {
+  .main .header__link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.main .header__box {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+}
+@media (max-width: 863px) {
+  .main .header__box {
+    margin-right: 25px;
+  }
+}
+.main .header__cart {
+  border-right: 1px solid #fff;
+  padding: 17px 21px 17px 0;
+  margin-right: 34px;
+}
+@media (max-width: 863px) {
+  .main .header__cart {
+    margin-right: 20px;
+  }
+}
+.main .header__phone-link {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  gap: 8px;
+}
+.main .header__phone-link::before {
+  content: "";
+  background: url(../img/phone.svg);
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+@media (max-width: 863px) {
+  .main .header__phone-link {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.main .header__phone-text {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  max-width: 155px;
+}
+@media (max-width: 863px) {
+  .main .header__btn {
+    text-align: center;
+  }
+}
+
+.history {
+  height: 70vh;
+}
+.history__card {
+  width: 349px;
+  height: 328px;
+  box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.1);
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+  margin-right: 31px;
+  position: relative;
+  background-color: white;
+  top: -100px;
+}
+.history__card:last-child {
+  margin-right: 0;
+}
+.history__card-title {
+  color: #2c2c2c;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.history__card-wrap{
+  display: flex;
+  justify-content: center;
+}
+.history__card-title span {
+  color: #bc9060;
+}
+.history__bottom-div {
+  display: flex;
+}
+.history__left-panel {
+  display: flex;
+  align-items: center;
+}
+.history__card-text {
+  color: #656363;
+}
+.history__text {
+  width: 444px;
+  margin-top: 22px;
+  color: #656363;
+  font-size: 16px;
+  text-align: center;
+}
+.history__heading {
+  margin-top: 152px;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 400;
+}
+.history__bottom-div__rigth-panel {
+  margin-left: 125px;
+}
+.history__info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.history__info__website {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.history__info__number {
+  font-size: 40px;
+  gap: 13px;
+  color: #bc9060;
+}
+.history__end {
+  background: url(../img/fon2.png) no-repeat center center/cover;
+  padding: 90px 0;
+  text-align: center;
+  height: 357px;
+  margin-top: 200px;
+}
+.history__end__heading {
+  font-size: 52px;
+  font-family: Tinos;
+  color: #D67E34;
+  margin-right: 200px;
+  width: 601px;
+}
+@media (max-width: 540px) {
+  .history__end__heading {
+    font-size: 30px;
+  }
+}
+.history__end__text {
+  font-size: 24px;
+  color: #fff;
+  width: 601px;
+}
+.history__btn {
+  margin-left: 579px;
+}
